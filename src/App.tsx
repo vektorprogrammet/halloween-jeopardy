@@ -1,13 +1,31 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+
+interface CardProps {
+  text: string
+  age: number
+}
+function Card(props: CardProps) {
+  return (
+    <>
+      <h1>{props.text}</h1>
+      <body>
+        {props.age}
+      </body>
+    </>
+  );
+}
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <Card text='hello' age={2} />
+
+
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
