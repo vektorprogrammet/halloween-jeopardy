@@ -14,7 +14,7 @@ export default function Category({ text, challenges }: CategoryProps) {
                 <h2>{text}</h2>
                 <div className="category-slots">
                     {challenges.map((item, i) => {
-                        return (<Slot coverText={`$${(i + 1) * 100}`} challengeText={item}/>);
+                        return (<Slot id={`${text}${i}`} coverText={`$${(i + 1) * 100}`} challengeText={item}/>);
                     })}
                 </div>
             </div>
