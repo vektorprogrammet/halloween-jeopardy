@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
-import Challenge from "./Challenge"
-import Cover from "./Cover"
+import Challenge from "../challenge/Challenge"
+import Cover from "../cover/Cover"
+import './Slot.css'
 
 interface SlotProps {
     id: string;

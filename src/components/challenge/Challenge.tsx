@@ -1,3 +1,5 @@
+import './Challenge.css'
+
 interface ChallengeProps {
     text: string;
 }
