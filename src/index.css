@@ -75,10 +75,5 @@ body {
   height: 100%;
   z-index: 1;
   /* For grå bakgrunn på hele challenge-boksen */
-  /* background-color: darkslategray; */
+  background-color: rgba(0, 0, 0, 0.4);
 }
-
-/* For grå bakgrunn kun bak challenge-tekst */
-/* .challenge-container h3 {
-  background-color: darkslategray;
-} */
