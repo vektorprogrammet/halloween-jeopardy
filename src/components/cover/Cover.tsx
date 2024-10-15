@@ -1,3 +1,5 @@
+import './Cover.css'
+
 interface CoverProps {
     text: string;
 }

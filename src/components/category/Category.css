@@ -1,0 +1,14 @@
+/* Category component styling */
+.category-container {
+    position: relative;
+}
+
+.category-slots {
+    max-width: fit-content;
+    /* border: 1px solid white; */
+    margin: auto;
+    /* display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-around; */
+}

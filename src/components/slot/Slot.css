@@ -1,0 +1,12 @@
+/* Slot component styling */
+.slot-container {
+  margin-bottom: 15px;
+  /* background-color: black; */
+  height: 125px;
+  width: 150px;
+  position: relative;
+}
+  
+.slot-container:hover {
+  cursor: pointer;
+}
