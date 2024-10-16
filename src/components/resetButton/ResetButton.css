@@ -7,11 +7,17 @@
     padding: 10px;
     background-color: darkred;
     margin-top: 10px;
-    margin-right: 150px;
+    font-family: Nosifer;
 }
 
 .resetButton-button:hover{
+    scale: 1.05;
     cursor: pointer;
+}
+
+.resetButton-button:active{
+    filter: brightness(75%);
+    scale: 1;
 }
 
 .resetButton-container{
@@ -19,5 +25,5 @@
     position: relative;
     border: #fff;
     max-width: fit-content;
-    right: -50%;
+    right: -45%;
 }
