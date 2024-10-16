@@ -1,4 +1,5 @@
 import Category from "./components/category/Category"
+import ResetButton from "./components/resetButton/ResetButton";
 import './App.css'
 
 const heksegryta_challenges: string[] = [
@@ -49,6 +50,10 @@ export default function App() {
   // When the return statement is split over multiple lines, it must be wrapped in a parentheses
   return (
     <>
+      <div className="resetButton-container">
+        <ResetButton />
+      </div>
+
       <h1 className="header glow">Halloween Jeopardy!</h1>
 
       <div className="app-container">

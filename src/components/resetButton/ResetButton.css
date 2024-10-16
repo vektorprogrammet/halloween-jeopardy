@@ -1,0 +1,23 @@
+/* ResetButton component styling */
+.resetButton-button{
+    color: white;
+    border: #fff;
+    border-radius: 5px;
+    font-size: x-large;
+    padding: 10px;
+    background-color: darkred;
+    margin-top: 10px;
+    margin-right: 150px;
+}
+
+.resetButton-button:hover{
+    cursor: pointer;
+}
+
+.resetButton-container{
+    margin: auto;
+    position: relative;
+    border: #fff;
+    max-width: fit-content;
+    right: -50%;
+}
