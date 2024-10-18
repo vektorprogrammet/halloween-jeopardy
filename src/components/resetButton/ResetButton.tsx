@@ -4,6 +4,7 @@ export default function ResetButton() {
 
     const reset = () => {
         window.localStorage.clear()
+        window.location.reload()
     }
 
     return (
