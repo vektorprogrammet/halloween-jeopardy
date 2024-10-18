@@ -6,7 +6,6 @@
     font-size: x-large;
     padding: 10px;
     background-color: darkred;
-    margin-top: 10px;
     font-family: Nosifer;
 }
 
@@ -26,4 +25,5 @@
     border: #fff;
     max-width: fit-content;
     right: -45%;
+    top: -130px;
 }

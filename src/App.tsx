@@ -50,16 +50,16 @@ export default function App() {
   // When the return statement is split over multiple lines, it must be wrapped in a parentheses
   return (
     <>
+      <h1 className="header glow">Halloween Jeopardy!</h1>
+      
       <div className="resetButton-container">
         <ResetButton />
       </div>
 
-      <h1 className="header glow">Halloween Jeopardy!</h1>
-
       <div className="app-container">
         {/* Kategorinavn: 
         ghostbusters (film osv.?), 
-        monster mash (musikk?),  
+        monster mash (musikk?),  ,
         gresskarskjæring, 
         Mummy/mommy: misforståtte ord osv.*/}
         {/* Mer random */}
