@@ -1,4 +1,5 @@
 import Category from "./components/category/Category"
+import ResetButton from "./components/resetButton/ResetButton";
 import './App.css'
 
 const heksegryta_challenges: string[] = [
@@ -50,11 +51,15 @@ export default function App() {
   return (
     <>
       <h1 className="header glow">Halloween Jeopardy!</h1>
+      
+      <div className="resetButton-container">
+        <ResetButton />
+      </div>
 
       <div className="app-container">
         {/* Kategorinavn: 
         ghostbusters (film osv.?), 
-        monster mash (musikk?),  
+        monster mash (musikk?),  ,
         gresskarskjæring, 
         Mummy/mommy: misforståtte ord osv.*/}
         {/* Mer random */}
