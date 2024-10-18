@@ -1,41 +1,43 @@
-export const heksegryta_challenges: string[] = [
-    "Ta 1 slurk",
-    "Alle på laget danser samba",
-    "Chug glasset",
-    "Løp 2 mil, ta 100 burpees og skap fred i verden"
+import { ReactNode } from "react";
+
+export const heksegryta_challenges: ReactNode[] = [
+    <h3>Ta 1 slurk</h3>,
+    <h3>Alle på laget danser samba</h3>,
+    <h3>Chug glasset</h3>,
+    <h3>Løp 2 mil, ta 100 burpees og skap fred i verden</h3>
 ];
 
-export const hahahalloween_challenges: string[] = [
-    "Ta 2 slurker",
-    "Alle på laget danser samba",
-    "Chug glasset",
-    "Løp 2 mil, ta 100 burpees og skap fred i verden"
+export const hahahalloween_challenges: ReactNode[] = [
+    <h3>Ta 1 slurk</h3>,
+    <h3>Alle på laget danser samba</h3>,
+    <h3>Chug glasset</h3>,
+    <h3>Løp 2 mil, ta 100 burpees og skap fred i verden</h3>
 ];
 
-export const murdermystery_challenges: string[] = [
-    "Ta 3 slurker",
-    "Alle på laget danser samba",
-    "Chug glasset",
-    "Løp 2 mil, ta 100 burpees og skap fred i verden"
+export const murdermystery_challenges: ReactNode[] = [
+    <h3>Ta 1 slurk</h3>,
+    <h3>Alle på laget danser samba</h3>,
+    <h3>Chug glasset</h3>,
+    <h3>Løp 2 mil, ta 100 burpees og skap fred i verden</h3>
 ];
 
-export const trick_or_treat_challenges: string[] = [
-    "Ta 4 slurker",
-    "Alle på laget danser samba",
-    "Chug glasset",
-    "Løp 2 mil, ta 100 burpees og skap fred i verden"
+export const trick_or_treat_challenges: ReactNode[] = [
+    <h3>Ta 1 slurk</h3>,
+    <h3>Alle på laget danser samba</h3>,
+    <h3>Chug glasset</h3>,
+    <h3>Løp 2 mil, ta 100 burpees og skap fred i verden</h3>
 ];
 
-export const godteriskala_challenges: string[] = [
-    "Ta 5 slurker",
-    "Alle på laget danser samba",
-    "Chug glasset",
-    "Løp 2 mil, ta 100 burpees og skap fred i verden"
+export const godteriskala_challenges: ReactNode[] = [
+    <h3>Ta 1 slurk</h3>,
+    <h3>Alle på laget danser samba</h3>,
+    <h3>Chug glasset</h3>,
+    <h3>Løp 2 mil, ta 100 burpees og skap fred i verden</h3>
 ];
 
-export const kostymefest_challenges: string[] = [
-    "Ta 6 slurker",
-    "Alle på laget danser samba",
-    "Chug glasset",
-    "Løp 2 mil, ta 100 burpees og skap fred i verden"
+export const kostymefest_challenges: ReactNode[] = [
+    <h3>Ta 1 slurk</h3>,
+    <h3>Alle på laget danser samba</h3>,
+    <h3>Chug glasset</h3>,
+    <h3>Løp 2 mil, ta 100 burpees og skap fred i verden</h3>
 ];
