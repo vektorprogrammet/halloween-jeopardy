@@ -1,15 +1,16 @@
 import './Challenge.css'
+import { ReactNode } from 'react';
 
 interface ChallengeProps {
-    text: string;
+    tag: ReactNode;
 }
 
-export default function Challenge({ text }: ChallengeProps) {
+export default function Challenge({ tag }: ChallengeProps) {
 
     return (
         <>
             <div className="challenge-container">
-                <h3>{text}</h3>
+                {tag}
             </div>
         </>
     )

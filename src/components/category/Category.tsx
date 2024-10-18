@@ -1,9 +1,10 @@
 import Slot from "../slot/Slot"
 import './Category.css'
+import { ReactNode } from "react";
 
 interface CategoryProps {
     text: string;
-    challenges: Array<string>;
+    challenges: Array<ReactNode>;
 }
 
 export default function Category({ text, challenges }: CategoryProps) {
