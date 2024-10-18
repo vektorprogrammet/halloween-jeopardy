@@ -11,27 +11,26 @@ interface SlotProps {
 
 export default function Slot({ id, coverText, challengeText }: SlotProps) {
 
-    const [isCoverVisible, setCoverVisible] = useState<boolean>(
+    const [isChallengeVisible, setChallengeVisible] = useState<boolean>(
         () => {
             const cache = window.localStorage.getItem(id)
             return cache === "true" ? true : false
         })
 
     useEffect(() => {
-        window.localStorage.setItem(`${id}`, String(isCoverVisible))
-    }, [isCoverVisible, id])
+        window.localStorage.setItem(`${id}`, String(isChallengeVisible))
+    }, [isChallengeVisible, id])
     
     const hideCover = () => {
-        if (isCoverVisible) setCoverVisible(false)
-        else setCoverVisible(true)
+        if (isChallengeVisible) setChallengeVisible(false)
+        else setChallengeVisible(true)
     }
 
     return (
         <>
-            {/* Calls hideCover when slot is clicked, and then changes status of isCoverVisible to false */}
             <div className="slot-container" onClick={hideCover}>
-                {isCoverVisible && <Cover text={coverText}/>}
-                {!isCoverVisible && <Challenge text={challengeText}/>}
+                {!isChallengeVisible && <Cover text={coverText}/>}
+                {isChallengeVisible && <Challenge text={challengeText} />}
             </div>
         </>
     )

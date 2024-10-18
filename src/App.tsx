@@ -46,7 +46,6 @@ const kostymefest_challenges: string[] = [
 
 // All functions must start with a capital letter
 export default function App() {
-  // window.localStorage.clear()
   // When the return statement is split over multiple lines, it must be wrapped in a parentheses
   return (
     <>
