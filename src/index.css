@@ -10,10 +10,21 @@ body {
   text-align: center;
 }
 
+.header-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+}
+
 .header {
   font-size: 48px;
-  text-align: center;
   font-family: Nosifer;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.resetButton-container {
+  grid-column-start: 5;
 }
 
 .glow {

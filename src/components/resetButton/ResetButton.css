@@ -3,7 +3,7 @@
     color: white;
     border: #fff;
     border-radius: 5px;
-    font-size: x-large;
+    font-size: 24px;
     padding: 10px;
     background-color: darkred;
     font-family: Nosifer;
@@ -17,13 +17,4 @@
 .resetButton-button:active{
     filter: brightness(75%);
     scale: 1;
-}
-
-.resetButton-container{
-    margin: auto;
-    position: relative;
-    border: #fff;
-    max-width: fit-content;
-    right: -45%;
-    top: -130px;
 }

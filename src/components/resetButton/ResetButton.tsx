@@ -9,9 +9,7 @@ export default function ResetButton() {
 
     return (
         <>
-            <button type='button'
-            className='resetButton-button'
-            onClick={reset}>
+            <button type='button' className='resetButton-button' onClick={reset}>
                 RESET
             </button>
         </>
