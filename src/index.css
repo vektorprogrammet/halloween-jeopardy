@@ -1,33 +1,13 @@
-/* Import font used in header */
-@import url('https://fonts.googleapis.com/css?family=Nosifer&display=swap');
-
 /* General styling */
 body {
-  background-color: black;
+  height: 100%;
   background-image: url("assets/halloween.png");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-color: black;
   color: white;
   text-align: center;
-}
-
-.header-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  place-items: center;
-}
-
-.header {
-  font-size: 48px;
-  font-family: Nosifer;
-  grid-column-start: 2;
-  grid-column-end: 5;
-}
-
-.resetButton-container {
-  grid-column-start: 5;
-}
-
-.glow {
-  color: darkred;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px darkred, 0 0 40px darkred, 0 0 50px darkred, 0 0 60px darkred, 0 0 70px darkred;
+  font-family: 'Times New Roman', Times, serif;
+  font-variant: small-caps;
 }
