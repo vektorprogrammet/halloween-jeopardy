@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { ReactNode, useEffect, useState } from "react"
 import Challenge from "../challenge/Challenge"
 import Cover from "../cover/Cover"
 import './Slot.css'
@@ -6,7 +6,7 @@ import './Slot.css'
 interface SlotProps {
     id: string;
     coverText: string;
-    challengeText: string;
+    challengeText: ReactNode;
 }
 
 export default function Slot({ id, coverText, challengeText }: SlotProps) {
@@ -30,7 +30,7 @@ export default function Slot({ id, coverText, challengeText }: SlotProps) {
         <>
             <div className="slot-container" onClick={hideCover}>
                 {!isChallengeVisible && <Cover text={coverText}/>}
-                {isChallengeVisible && <Challenge text={challengeText} />}
+                {isChallengeVisible && <Challenge tag={challengeText} />}
             </div>
         </>
     )
