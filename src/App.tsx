@@ -49,10 +49,12 @@ export default function App() {
   // When the return statement is split over multiple lines, it must be wrapped in a parentheses
   return (
     <>
-      <h1 className="header glow">Halloween Jeopardy!</h1>
-      
-      <div className="resetButton-container">
-        <ResetButton />
+      <div className="header-container">
+        <h1 className="header glow">Halloween Jeopardy!</h1>
+        
+        <div className="resetButton-container">
+          <ResetButton />
+        </div>
       </div>
 
       <div className="app-container">
