@@ -1,5 +1,3 @@
-import './ResetButton.css'
-
 export default function ResetButton() {
 
     const reset = () => {

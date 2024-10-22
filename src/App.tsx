@@ -1,7 +1,6 @@
 import Category from "./components/category/Category"
 import ResetButton from "./components/resetButton/ResetButton"
 import * as ChallengeLists from "./components/challenge/ChallengeLists"
-import './App.css'
 
 export default function App() {
   return (

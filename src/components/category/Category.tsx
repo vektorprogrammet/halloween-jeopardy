@@ -1,5 +1,4 @@
 import Slot from "../slot/Slot"
-import './Category.css'
 import { ReactNode } from "react";
 
 interface CategoryProps {

@@ -1,4 +1,3 @@
-import './Challenge.css'
 import { ReactNode } from 'react';
 
 interface ChallengeProps {
