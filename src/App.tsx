@@ -104,21 +104,18 @@ export default function App() {
               kostymefest_challenges
             ];
           return (
-            <>
-              <div className="category-container">
-                  <h2>{title}</h2>
-                  
-                  <div className="category-slots">
-                      {challenges_list[i].map((item, i) => {
-                          return (
-                              <Slot id={`${title}${i}`} coverText={`$${(i + 1) * 100}`} challengeText={item}/>
-                          );
-                      })}
-                  </div>
+            <div className="category-container">
+              <h2>{title}</h2>
+              
+              <div className="category-slots">
+                {challenges_list[i].map((item, i) => {
+                  return (
+                    <Slot id={`${title}${i}`} coverText={`$${(i + 1) * 100}`} challengeText={item}/>
+                  );
+                })}
               </div>
-            </>
-          )
-          }
+            </div>
+          )}
         )}
       </div>
     </>
