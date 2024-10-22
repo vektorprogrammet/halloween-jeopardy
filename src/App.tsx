@@ -15,12 +15,29 @@ export default function App() {
       </div>
 
       <div className="app-container">
-        <Category text="Heksegryta" challenges={ChallengeLists.heksegryta_challenges}/>
-        <Category text="Ha-ha-halloween" challenges={ChallengeLists.hahahalloween_challenges}/>
-        <Category text="Murder mystery" challenges={ChallengeLists.murdermystery_challenges}/>
-        <Category text="Trick or treat?" challenges={ChallengeLists.trick_or_treat_challenges}/>
-        <Category text="Godteriskåla" challenges={ChallengeLists.godteriskala_challenges}/>
-        <Category text="Kostymefest" challenges={ChallengeLists.kostymefest_challenges}/>
+        {[
+          "Heksegryta",
+          "Ha-ha-halloween",
+          "Murder mystery",
+          "Trick or treat?",
+          "Godteriskåla",
+          "Kostymefest"
+        ].map(
+          (title, i) => {
+            const challenges_list = [
+              ChallengeLists.heksegryta_challenges,
+              ChallengeLists.hahahalloween_challenges,
+              ChallengeLists.murdermystery_challenges,
+              ChallengeLists.trick_or_treat_challenges,
+              ChallengeLists.godteriskala_challenges,
+              ChallengeLists.kostymefest_challenges
+            ];
+          return (
+            <>
+              <Category text={title} challenges={challenges_list[i]} />
+            </>
+          )}
+        )}
       </div>
     </>
   )
