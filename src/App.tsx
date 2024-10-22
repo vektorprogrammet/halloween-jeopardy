@@ -1,6 +1,10 @@
 import Category from "./components/category/Category"
-import ResetButton from "./components/resetButton/ResetButton"
 import * as ChallengeLists from "./components/challenge/ChallengeLists"
+
+const reset = () => {
+  window.localStorage.clear()
+  window.location.reload()
+}
 
 export default function App() {
   return (
@@ -9,7 +13,9 @@ export default function App() {
         <h1 className="header glow">Halloween Jeopardy!</h1>
         
         <div className="resetButton-container">
-          <ResetButton />
+            <button type='button' className='resetButton-button' onClick={reset}>
+                RESET
+            </button>
         </div>
       </div>
 
