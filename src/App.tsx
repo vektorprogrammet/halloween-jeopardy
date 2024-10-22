@@ -1,4 +1,4 @@
-import Category from "./components/category/Category"
+import Slot from "./components/slot/Slot";
 import { ReactNode } from "react";
 
 export const heksegryta_challenges: ReactNode[] = [
@@ -86,12 +86,36 @@ export default function App() {
       </div>
 
       <div className="app-container">
-        {["Heksegryta", "Ha-ha-halloween","Murder mystery", "Trick or treat?", "Godteriskåla", "Kostymefest" ].map(
+        {[
+          "Heksegryta",
+          "Ha-ha-halloween",
+          "Murder mystery",
+          "Trick or treat?",
+          "Godteriskåla",
+          "Kostymefest"
+        ].map(
           (title, i) => {
-            const challenges_list = [heksegryta_challenges, hahahalloween_challenges, murdermystery_challenges, trick_or_treat_challenges, godteriskala_challenges, kostymefest_challenges];
+            const challenges_list = [
+              heksegryta_challenges,
+              hahahalloween_challenges,
+              murdermystery_challenges,
+              trick_or_treat_challenges,
+              godteriskala_challenges,
+              kostymefest_challenges
+            ];
           return (
             <>
-              <Category text={title} challenges={challenges_list[i]} />
+              <div className="category-container">
+                  <h2>{title}</h2>
+                  
+                  <div className="category-slots">
+                      {challenges_list[i].map((item, i) => {
+                          return (
+                              <Slot id={`${title}${i}`} coverText={`$${(i + 1) * 100}`} challengeText={item}/>
+                          );
+                      })}
+                  </div>
+              </div>
             </>
           )
           }
