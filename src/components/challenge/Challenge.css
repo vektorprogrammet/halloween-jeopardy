@@ -7,7 +7,7 @@
     border-radius: 1.2vw;
 }
 
-.Link{
+.link{
     display: flex;
     color: white;
     font-size: larger;
@@ -21,6 +21,6 @@
     transition: 0.15s;
 }
 
-.Link:hover{
+.link:hover{
     scale: 1.05;
 }
