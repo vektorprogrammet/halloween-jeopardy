@@ -6,3 +6,21 @@
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 1.2vw;
 }
+
+.Link{
+    display: flex;
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    border: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-self: center;
+    margin-top: 10px;
+    transition: 0.15s;
+}
+
+.Link:hover{
+    scale: 1.05;
+}
