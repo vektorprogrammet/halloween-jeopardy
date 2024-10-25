@@ -17,7 +17,7 @@ export const hahahalloween_challenges: ReactNode[] = [
     <h3>6 seconds. Three strikes and you´re out!</h3>,
     // Enten link/bytte side til eller fysisk (med kort) hesteveddeløp. Laget med færrest poeng får velge farge først (evt. de som åpnet luken)
     // <h3>Hesteveddeløp! Alle lag får hver sin farge, og vinneren får poengene og dele ut 10 slurker</h3>,
-    <a href="https://www.youtube.com/" className="Link">Hesteløp!</a>,
+    <a href="https://www.youtube.com/" target='blank' className="Link">Hesteløp!</a>,
     // Limbo-konkurranse mellom alle lag. En fra hvert lag deltar. Alle starter like høyt opp (høyde på personen har ingenting å si).
     <h3>Limbo! Alle lag sender en utfordrer. Vinneren får poengene, og dele ut 10 slurker</h3>,
     // Alle må opp med mobilene, og hvert lag får en link til et multiplayer puslespill (https://www.jigsawexplorer.com/multiplayer-jigsaw-puzzle-games/). Første lag til å pusle ferdig vinner
