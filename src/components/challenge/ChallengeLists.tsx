@@ -1,3 +1,4 @@
+import './Challenge.css'
 import { ReactNode } from "react";
 
 export const heksegryta_challenges: ReactNode[] = [
@@ -15,7 +16,8 @@ export const hahahalloween_challenges: ReactNode[] = [
     // Mini-versjon av 6 minutes. Vi spiller av 6 sekunder (ikke starten, midt inni typ) av en sang, og laget må gjette navnet på sangen eller artist. Tre feil, og de har tapt. Minst 5 riktige for å vinne
     <h3>6 seconds. Three strikes and you´re out!</h3>,
     // Enten link/bytte side til eller fysisk (med kort) hesteveddeløp. Laget med færrest poeng får velge farge først (evt. de som åpnet luken)
-    <h3>Hesteveddeløp! Alle lag får hver sin farge, og vinneren får poengene og dele ut 10 slurker</h3>,
+    // <h3>Hesteveddeløp! Alle lag får hver sin farge, og vinneren får poengene og dele ut 10 slurker</h3>,
+    <a href="https://filipskaug.github.io/HorseRace/" target='blank' className="link">Hesteløp!</a>,
     // Limbo-konkurranse mellom alle lag. En fra hvert lag deltar. Alle starter like høyt opp (høyde på personen har ingenting å si).
     <h3>Limbo! Alle lag sender en utfordrer. Vinneren får poengene, og dele ut 10 slurker</h3>,
     // Alle må opp med mobilene, og hvert lag får en link til et multiplayer puslespill (https://www.jigsawexplorer.com/multiplayer-jigsaw-puzzle-games/). Første lag til å pusle ferdig vinner
