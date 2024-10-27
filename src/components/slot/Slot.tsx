@@ -11,27 +11,23 @@ interface SlotProps {
 
 export default function Slot({ id, coverText, challengeText }: SlotProps) {
 
-    const [isChallengeVisible, setChallengeVisible] = useState<boolean>(
-        () => {
-            const cache = window.localStorage.getItem(id)
-            return cache === "true" ? true : false
-        })
+    const [isChallengeVisible, setChallengeVisible] = useState<boolean>(() => {
+        const cache = window.localStorage.getItem(id);
+        return cache === "true";
+    })
 
     useEffect(() => {
         window.localStorage.setItem(`${id}`, String(isChallengeVisible))
-    }, [isChallengeVisible, id])
+    }, [isChallengeVisible, id]);
     
     const hideCover = () => {
-        if (isChallengeVisible) setChallengeVisible(false)
-        else setChallengeVisible(true)
-    }
+        setChallengeVisible(!isChallengeVisible);
+    };
 
     return (
-        <>
-            <div className="slot-container" onClick={hideCover}>
-                {!isChallengeVisible && <Cover text={coverText}/>}
-                {isChallengeVisible && <Challenge tag={challengeText} />}
-            </div>
-        </>
+        <div className="slot-container" onClick={hideCover}>
+            {!isChallengeVisible && <Cover text={coverText}/>}
+            {isChallengeVisible && <Challenge tag={challengeText} />}
+        </div>
     )
 }

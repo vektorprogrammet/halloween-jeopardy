@@ -8,10 +8,8 @@ interface ChallengeProps {
 export default function Challenge({ tag }: ChallengeProps) {
 
     return (
-        <>
-            <div className="challenge-container">
-                {tag}
-            </div>
-        </>
+        <div className="challenge-container">
+            {tag}
+        </div>
     )
 }

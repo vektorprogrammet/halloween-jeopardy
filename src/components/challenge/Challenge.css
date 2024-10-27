@@ -6,3 +6,13 @@
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 1.2vw;
 }
+
+.new-page-button {
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-size: large;
+}
+
+.new-page-button:hover {
+    cursor: pointer;
+}
