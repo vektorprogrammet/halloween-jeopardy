@@ -1,0 +1,7 @@
+.category-slots {
+    max-width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
