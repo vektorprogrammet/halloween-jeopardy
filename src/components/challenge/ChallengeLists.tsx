@@ -39,7 +39,9 @@ export const trick_or_treat_challenges: ReactNode[] = [
     // Leser en sant eller usant-påstand for hver av lagmedlemmene. Dersom de svarer riktig, får de dele ut 3 slurker, ved feil må laget ta 3 slurker. Alle feil = chug på hele laget
     <h3>Sant eller usant: alle på laget får en hver. Riktig = dele ut 3 slurker, feil = laget tar 3 slurker</h3>,
     // Enten link/bytte side til eller mini-spin the wheel inni luka. F.eks. tall fra 1-6, og laget må drikke antall slurker hjulet lander på
-    <h3>Spin the wheel! Laget drikker antall slurker</h3>,
+    <button onClick={() => { window.open('/SpinTheWheel', '_blank') }} className="new-page-button">
+        Spin the wheel!
+    </button>,
     // Én på laget får vodkashot, resten vann. De tar den samtidig, og de andre lagene stemmer på hvem som drakk vodka. Lag som gjetter riktig får halvparten av poengene (resten gis til spillerlaget). Ingen riktig = laget får alle poengene
     <h3>Vann eller vodka</h3>,
     // Alle på laget får samme spørsmål: nødt eller sannhet? De får spørsmål/challenge fra en liste (inspo: https://www.cosmopolitan.com/uk/entertainment/a32313763/truth-or-dare-questions/), og dersom de nekter å svare/gjøre tingen må de ta en shot
@@ -61,7 +63,9 @@ export const kostymefest_challenges: ReactNode[] = [
     // Klassisk pekelek. Alle peker på den de synes har det mest kreative kostymet. Alle som blir pekt på, drikker antall pek. Spillerlaget og laget til den med flest pek deler poengene broderlig mellom seg
     <h3>Pekelek: hvem har det mest kreative kostymet? Drikk antall pek du får</h3>,
     // Vi setter sammen bilde av 2-3 som deltar på festen, og laget må gjette hvem bildet er satt sammen av
-    <h3>Gjett hvem!</h3>,
+    <button onClick={() => { window.open('/GuessWho', '_blank') }} className="new-page-button">
+        Gjett hvem!
+    </button>,
     // Klassisk pekelek. Alle peker på den de synes har det beste kostymet. Alle som blir pekt på, drikker antall pek. Spillerlaget og laget til den med flest pek deler poengene broderlig mellom seg
     <h3>Pekelek: hvem har best kostyme? Drikk antall pek du får</h3>,
     // Laget bytter så mange eller få klesplagg de vil innad i laget (ett bytte = to plagg, ett for begge parter). Laget deler ut like mange slurker som klesplagg de byttet. Må beholdes ut spillet
