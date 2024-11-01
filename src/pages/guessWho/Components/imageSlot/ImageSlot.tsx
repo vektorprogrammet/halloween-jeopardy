@@ -25,7 +25,7 @@ export default function Slot({ coverText, image }: ImageSlotProps) {
     };
 
     return (
-        <div className="slot-container" onClick={hideCover}>
+        <div className="imageslot-container" onClick={hideCover}>
             {!isChallengeVisible && <ImageCover text={coverText}/>}
             {isChallengeVisible && <ImageItem tag={image} />}
         </div>

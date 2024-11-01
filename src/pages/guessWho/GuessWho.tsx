@@ -1,5 +1,6 @@
 import './GuessWho.css'
 import Image from './Components/image/Image'
+import Placeholder from './Assets/placeholder.jpg'
 
 const images: string[] = ["1", "2", "3", "4"]
 
@@ -15,10 +16,10 @@ export const GuessWho = () => {
             {images.map(
                 (index, i) => {
                 const image_list = [
-                    <h3>Placeholder</h3>,
-                    <h3>Placeholder</h3>,
-                    <h3>Placeholder</h3>,
-                    <h3>Placeholder</h3>
+                    <img src={Placeholder} alt="placeholder" className='face-image' />,
+                    <img src={Placeholder} alt="placeholder" className='face-image' />,
+                    <img src={Placeholder} alt="placeholder" className='face-image' />,
+                    <img src={Placeholder} alt="placeholder" className='face-image' />
                 ];
                 return (
                 <>
