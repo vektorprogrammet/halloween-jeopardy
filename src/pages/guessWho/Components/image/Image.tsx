@@ -11,7 +11,7 @@ export default function Image({image, index}:ImageProps){
     return (
         <>
         <div className="category-container">
-            <h2>Image {index}</h2>
+            
             
             <div className="imagecategory-slots">
                 <ImageSlot coverText={index} image={image}/>

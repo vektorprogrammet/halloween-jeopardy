@@ -7,9 +7,8 @@ const images: string[] = ["1", "2", "3", "4"]
 export const GuessWho = () => {
     return (
         <>
-            <div>
-               <h1>tittel</h1>
-               <p>hvem er disse to folka vi har slått sammen</p>
+            <div className='header-container'>
+               <h1 className='header glow'>Guess Who</h1>
             </div>
 
             <div className="images-container">

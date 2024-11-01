@@ -31,10 +31,7 @@
     scale: 1.05;
 }
 
-.link {
-    /* display: inline-block; */
-    height: 100%;
-    width: 100%;
+.url{
     color: #fff;
     text-decoration: none;
 }

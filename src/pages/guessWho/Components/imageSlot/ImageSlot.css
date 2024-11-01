@@ -1,11 +1,12 @@
 /* Slot component styling */
 .imageslot-container {
-    height: 24vw;
-    width: 18vw;
-    position: relative;
-    border-radius: 1.2vw;
-  }
-    
-  .imageslot-container:hover {
-    cursor: pointer;
-  }
+  height: 24vw;
+  width: 18vw;
+  position: relative;
+  border-radius: 1.2vw;
+  margin-top: 3vw;
+}
+  
+.imageslot-container:hover {
+  cursor: pointer;
+}

@@ -9,7 +9,7 @@ export default function Cover({ text }: CoverProps) {
     return (
         <>
             <div className="imagecover-container">
-                <h3>{text}</h3>
+                <h2 className='cover-text'>{text}</h2>
             </div>
         </>
     )
