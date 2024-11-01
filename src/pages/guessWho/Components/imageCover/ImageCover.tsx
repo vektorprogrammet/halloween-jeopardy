@@ -8,7 +8,7 @@ export default function Cover({ text }: CoverProps) {
 
     return (
         <>
-            <div className="cover-container">
+            <div className="imagecover-container">
                 <h3>{text}</h3>
             </div>
         </>

@@ -1,5 +1,5 @@
 /* Cover component styling */
-.cover-container {
+.imagecover-container {
     background-color: darkred;
     position: absolute;
     width: 100%;
@@ -8,11 +8,11 @@
     transition: 0.15s;
   }
   
-  .cover-container:hover {
+  .imagecover-container:hover {
     scale: 1.05;
   }
   
-  .cover-container:active {
+  .imagecover-container:active {
     filter: brightness(75%);
     scale: 1;
   }
