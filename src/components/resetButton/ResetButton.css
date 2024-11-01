@@ -1,12 +1,12 @@
 /* ResetButton component styling */
 .resetButton-button{
+    font-family: 'Times New Roman', Times, serif;
     color: white;
-    border: #fff;
+    border: none;
     border-radius: 1vw;
     font-size: 1.7vw;
     padding: 1vw;
     background-color: darkred;
-    font-family: 'Times New Roman', Times, serif;
     transition: 0.15s;
 }
 
