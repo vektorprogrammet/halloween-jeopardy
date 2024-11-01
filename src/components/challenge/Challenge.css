@@ -5,32 +5,36 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 1.2vw;
+    display: flex;
+    justify-content: center;
 }
 
 .new-page-button {
     font-family: 'Times New Roman', Times, serif;
     font-variant: small-caps;
     font-size: large;
+    position: relative;
+
+    color: white;
+    border: none;
+    border-radius: 1vw;
+    background-color: rgba(139, 0, 0, 0.8);
+    justify-self: center;
+    transition: 0.15s;
+    height: 70%;
+    width: 70%;
+    margin: auto;
 }
 
 .new-page-button:hover {
     cursor: pointer;
-}
-
-.link{
-    display: flex;
-    color: white;
-    font-size: larger;
-    text-decoration: none;
-    border: #fff;
-    border-radius: 1vw;
-    padding: 2vw;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-self: center;
-    margin-top: 1vw;
-    transition: 0.15s;
-}
-
-.link:hover{
     scale: 1.05;
+}
+
+.link {
+    /* display: inline-block; */
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
 }

@@ -1,6 +1,8 @@
 /* Category component styling */
 /* .category-container {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 } */
 
 .category-slots {
