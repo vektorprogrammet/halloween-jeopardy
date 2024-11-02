@@ -26,16 +26,16 @@ export const hahahalloween_challenges: ReactNode[] = [
     <h3>Puslespill!</h3>
 ];
 
-export const murdermystery_challenges: ReactNode[] = [
-    // Finner på en would you rather. Ene alternativet tommel opp, andre ned. Alternativet som får færrest stemmer, drikker
-    <h3>Would you rather: færrest stemmer drikker</h3>,
-    // Som å stjele godteri fra en baby;) Hver slurk en i laget tar = 5 poeng fra et valgfritt annet lag
-    <h3>Dere kan stjele poeng fra et annet lag. 1 slurk = 5 poeng</h3>,
-    // Alle er deltakere. Alle står i en sirkel, og ser ned i bakken. Teller ned fra 3, og alle ser opp på en annen person. Øyenkontakt = begge ute. 1 eller 2 vinnere: kan dele ut 10 slurker og får poeng
-    <h3>Medusa</h3>,
-    // Hele laget får drikken sin teipet fast til enten en eller begge hender, og må drikke sånn resten av spillet
-    <h3>Edward Ciderhands</h3>
-];
+// export const murdermystery_challenges: ReactNode[] = [
+//     // Finner på en would you rather. Ene alternativet tommel opp, andre ned. Alternativet som får færrest stemmer, drikker
+//     <h3>Would you rather: færrest stemmer drikker</h3>,
+//     // Som å stjele godteri fra en baby;) Hver slurk en i laget tar = 5 poeng fra et valgfritt annet lag
+//     <h3>Dere kan stjele poeng fra et annet lag. 1 slurk = 5 poeng</h3>,
+//     // Alle er deltakere. Alle står i en sirkel, og ser ned i bakken. Teller ned fra 3, og alle ser opp på en annen person. Øyenkontakt = begge ute. 1 eller 2 vinnere: kan dele ut 10 slurker og får poeng
+//     <h3>Medusa</h3>,
+//     // Hele laget får drikken sin teipet fast til enten en eller begge hender, og må drikke sånn resten av spillet
+//     <h3>Edward Ciderhands</h3>
+// ];
 
 export const trick_or_treat_challenges: ReactNode[] = [
     // Leser en sant eller usant-påstand for hver av lagmedlemmene. Dersom de svarer riktig, får de dele ut 3 slurker, ved feil må laget ta 3 slurker. Alle feil = chug på hele laget
