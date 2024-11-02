@@ -3,9 +3,8 @@ import Image from './Components/image/Image'
 import Image1 from './Assets/image1.jpg'
 import Image2 from './Assets/image2.jpg'
 import Image3 from './Assets/image3.jpg'
-import Image4 from './Assets/image4.jpg'
 
-const images: string[] = ["1", "2", "3", "4"]
+const images: string[] = ["1", "2", "3"]
 
 export const GuessWho = () => {
     return (
@@ -19,9 +18,8 @@ export const GuessWho = () => {
                 (index, i) => {
                 const image_list = [
                     <img src={Image1} alt="Filip + Trump" className='face-image' />,
-                    <img src={Image1} alt="placeholder" className='face-image' />,
-                    <img src={Image3} alt="Sander + Haaland" className='face-image' />,
-                    <img src={Image4} alt="Eirik + Mona Lisa" className='face-image' />
+                    <img src={Image2} alt="Sander + Haaland" className='face-image' />,
+                    <img src={Image3} alt="Eirik + Mona Lisa" className='face-image' />
                 ];
                 return (
                 <>
