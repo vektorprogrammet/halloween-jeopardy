@@ -31,3 +31,38 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
+
+.points-category {
+    margin-left: 1vw;
+}
+
+.points-container {
+    max-width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.points-slots {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 0.1vw solid white;
+
+    height: 7.8vw;
+    width: 12vw;
+    position: relative;
+    border-radius: 1.2vw;
+
+    align-items: center;
+}
+
+.points-slots input {
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1vw solid white;
+    
+    color: white;
+    text-align: center;
+    font-size: large;
+}
