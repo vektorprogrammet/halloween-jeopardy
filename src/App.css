@@ -32,6 +32,13 @@
     grid-template-columns: repeat(6, 1fr);
 }
 
+.images-container {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .points-category {
     margin-left: 1vw;
 }
@@ -66,3 +73,4 @@
     text-align: center;
     font-size: large;
 }
+

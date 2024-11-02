@@ -18,7 +18,7 @@ export const hahahalloween_challenges: ReactNode[] = [
     // Enten link/bytte side til eller fysisk (med kort) hesteveddeløp. Laget med færrest poeng får velge farge først (evt. de som åpnet luken)
     // <h3>Hesteveddeløp! Alle lag får hver sin farge, og vinneren får poengene og dele ut 10 slurker</h3>,
     <button className='new-page-button' >
-        <a href="https://filipskaug.github.io/HorseRace/" target='blank' className='link'>Hesteløp!</a>
+        <a href="https://filipskaug.github.io/HorseRace/" target='blank' className='url'>Hesteløp!</a>
     </button>,
     // Limbo-konkurranse mellom alle lag. En fra hvert lag deltar. Alle starter like høyt opp (høyde på personen har ingenting å si).
     <h3>Limbo! Alle lag sender en utfordrer. Vinneren får poengene, og dele ut 10 slurker</h3>,
@@ -41,8 +41,11 @@ export const trick_or_treat_challenges: ReactNode[] = [
     // Leser en sant eller usant-påstand for hver av lagmedlemmene. Dersom de svarer riktig, får de dele ut 3 slurker, ved feil må laget ta 3 slurker. Alle feil = chug på hele laget
     <h3>Sant eller usant: alle på laget får en hver. Riktig = dele ut 3 slurker, feil = laget tar 3 slurker</h3>,
     // Enten link/bytte side til eller mini-spin the wheel inni luka. F.eks. tall fra 1-6, og laget må drikke antall slurker hjulet lander på
-    <button onClick={() => { window.open('/SpinTheWheel', '_blank') }} className="new-page-button">
-        Spin the wheel!
+    // <button onClick={() => { window.open('/SpinTheWheel', '_blank') }} className="new-page-button">
+    //     Spin the wheel!
+    // </button>,
+    <button className='new-page-button' >
+        <a href="https://wheelofnames.com/" target='blank' className='url'>Spin the wheel!</a>
     </button>,
     // Én på laget får vodkashot, resten vann. De tar den samtidig, og de andre lagene stemmer på hvem som drakk vodka. Lag som gjetter riktig får halvparten av poengene (resten gis til spillerlaget). Ingen riktig = laget får alle poengene
     <h3>Vann eller vodka</h3>,
