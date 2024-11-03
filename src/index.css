@@ -1,6 +1,6 @@
 /* General styling */
 body {
-  height: 100%;
+  height: 100dvh;
   background-image: url("assets/halloween.png");
   background-position: center;
   background-repeat: no-repeat;
