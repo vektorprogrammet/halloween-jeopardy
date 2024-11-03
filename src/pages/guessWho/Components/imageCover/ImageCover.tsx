@@ -1,16 +1,14 @@
 import './ImageCover.css'
 
-interface CoverProps {
+interface ImageCoverProps {
     text: string;
 }
 
-export default function Cover({ text }: CoverProps) {
+export default function ImageCover({ text }: ImageCoverProps) {
 
     return (
-        <>
-            <div className="imagecover-container">
-                <h2 className='cover-text'>{text}</h2>
-            </div>
-        </>
+        <div className="imagecover-container">
+            <h2 className='imagecover-text'>{text}</h2>
+        </div>
     )
 }

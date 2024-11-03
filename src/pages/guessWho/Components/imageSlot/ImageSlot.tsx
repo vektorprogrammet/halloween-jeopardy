@@ -4,30 +4,24 @@ import ImageCover from '../imageCover/ImageCover'
 import ImageItem from '../imageItem/ImageItem'
 
 interface ImageSlotProps {
-    coverText: string;
+    imageCoverText: string;
     image: ReactNode;
 }
 
-export default function Slot({ coverText, image }: ImageSlotProps) {
+export default function ImageSlot({ imageCoverText, image }: ImageSlotProps) {
 
-    const [isChallengeVisible, setChallengeVisible] = useState<boolean>(() => {
-        // const cache = window.localStorage.getItem(id);
-        // return cache === "true";
+    const [isImageVisible, setImageVisible] = useState<boolean>(() => {
         return false
     })
 
-    // useEffect(() => {
-    //     window.localStorage.setItem(`${id}`, String(isChallengeVisible))
-    // }, [isChallengeVisible, id]);
-    
-    const hideCover = () => {
-        setChallengeVisible(!isChallengeVisible);
+    const hideImageCover = () => {
+        setImageVisible(!isImageVisible);
     };
 
     return (
-        <div className="imageslot-container" onClick={hideCover}>
-            {!isChallengeVisible && <ImageCover text={coverText}/>}
-            {isChallengeVisible && <ImageItem tag={image} />}
+        <div className="imageslot-container" onClick={hideImageCover}>
+            {!isImageVisible && <ImageCover text={imageCoverText} />}
+            {isImageVisible && <ImageItem tag={image} />}
         </div>
     )
 }

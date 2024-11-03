@@ -7,16 +7,12 @@ interface ImageProps {
     index: string
 }
 
-export default function Image({image, index}:ImageProps){
+export default function Image({ image, index }: ImageProps) {
     return (
-        <>
         <div className="category-container">
-            
-            
             <div className="imagecategory-slots">
-                <ImageSlot coverText={index} image={image}/>
+                <ImageSlot imageCoverText={index} image={image} />
             </div>
         </div>
-        </>
     )
 }
