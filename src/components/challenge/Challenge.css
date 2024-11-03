@@ -13,17 +13,18 @@
     font-family: 'Times New Roman', Times, serif;
     font-variant: small-caps;
     font-size: large;
-    position: relative;
-
     color: white;
+
+    background-color: rgba(139, 0, 0, 0.8);
+    width: 70%;
+    height: 70%;
+
+    position: relative;
+    margin: auto;
     border: none;
     border-radius: 1vw;
-    background-color: rgba(139, 0, 0, 0.8);
     justify-self: center;
     transition: 0.15s;
-    height: 70%;
-    width: 70%;
-    margin: auto;
 }
 
 .new-page-button:hover {
@@ -31,7 +32,7 @@
     scale: 1.05;
 }
 
-.url{
+.url {
     color: #fff;
     text-decoration: none;
 }

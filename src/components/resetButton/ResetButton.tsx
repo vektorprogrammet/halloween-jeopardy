@@ -8,7 +8,7 @@ export default function ResetButton() {
     }
 
     return (
-        <button type='button' className='resetButton-button' onClick={reset}>
+        <button type='button' className='resetbutton-button' onClick={reset}>
             RESET
         </button>
     )

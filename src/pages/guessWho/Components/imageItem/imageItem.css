@@ -1,36 +1,8 @@
 /* Challenge component styling */
-.challenge-container {
+.imageitem-container {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 1.2vw;
-}
-
-.new-page-button {
-    font-family: 'Times New Roman', Times, serif;
-    font-variant: small-caps;
-    font-size: large;
-}
-
-.new-page-button:hover {
-    cursor: pointer;
-}
-
-.link{
-    display: flex;
-    color: white;
-    font-size: larger;
-    text-decoration: none;
-    border: #fff;
-    border-radius: 1vw;
-    padding: 2vw;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-self: center;
-    margin-top: 1vw;
-    transition: 0.15s;
-}
-
-.link:hover{
-    scale: 1.05;
 }
