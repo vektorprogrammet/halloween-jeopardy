@@ -2,77 +2,60 @@ import './Challenge.css'
 import { ReactNode } from "react";
 
 export const heksegryta_challenges: ReactNode[] = [
-    // En fra hvert lag tas med ut av rommet og vet ikke hva de skal. De må konkurrere i "sett vorten på heksa" (hale på grisen). De får beskjed om å ikke si noe til de andre hva de har vært med på, kun at vinneren får med seg poengene til laget sitt
+    // En fra hvert lag: sett vorta på heksen
     <h3>...kidnapping...</h3>,
-    // Gir navnet på en drink, de sier ingrediensene
-    <h3>Gjett ingrediensene i en drink. 1 slurk per feil</h3>,
-    // CHUG!
-    <h3>Alle på laget tømmer glasset</h3>,
-    // Vi har laget en drink med diverse ingredienser, laget må smake og gjette
-    <h3>Smak på denne drinken og gjett ingrediensene. 1 slurk per feil</h3>
+    // Med alle. 4 terninger
+    <h3>Opus!</h3>,
+    // Alle på laget
+    <h3>Ta like mange slurker som antall folk på laget</h3>,
+    <h3>CHUG! Alle på laget tømmer glasset</h3>
 ];
 
 export const hahahalloween_challenges: ReactNode[] = [
-    // Mini-versjon av 6 minutes. Vi spiller av 6 sekunder (ikke starten, midt inni typ) av en sang, og laget må gjette navnet på sangen eller artist. Tre feil, og de har tapt. Minst 5 riktige for å vinne
-    <h3>6 seconds. Three strikes and you´re out!</h3>,
-    // Enten link/bytte side til eller fysisk (med kort) hesteveddeløp. Laget med færrest poeng får velge farge først (evt. de som åpnet luken)
-    // <h3>Hesteveddeløp! Alle lag får hver sin farge, og vinneren får poengene og dele ut 10 slurker</h3>,
+    // Del ut til enkeltpersoner
+    <h3>Eldste og yngste på laget: del ut halvparten av alder deres i slurker</h3>,
+    // Hvert lag er en karakter (førstemann til å velge)
     <button className='new-page-button' >
-        <a href="https://filipskaug.github.io/HorseRace/" target='blank' className='url'>Hesteløp!</a>
+        <a href="https://filipskaug.github.io/HorseRace/" target='blank' className='url'>Hesteveddeløp!</a>
     </button>,
-    // Limbo-konkurranse mellom alle lag. En fra hvert lag deltar. Alle starter like høyt opp (høyde på personen har ingenting å si).
-    <h3>Limbo! Alle lag sender en utfordrer. Vinneren får poengene, og dele ut 10 slurker</h3>,
-    // Alle må opp med mobilene, og hvert lag får en link til et multiplayer puslespill (https://www.jigsawexplorer.com/multiplayer-jigsaw-puzzle-games/). Første lag til å pusle ferdig vinner
-    <h3>Puslespill!</h3>
+    // Velger et annet lag de vil utfordre, og så velger begge lag én utfordrer
+    <h3>Utfordre en person fra et annet lag til chuggeduell</h3>,
+    // 1 minutt til å ta så mange slurker som mulig innad i laget tilsammen. Slurker, ikke chug
+    <h3>Dere kan stjele poeng fra et annet lag. 1 slurk = 5 poeng</h3>,
 ];
 
-// export const murdermystery_challenges: ReactNode[] = [
-//     // Finner på en would you rather. Ene alternativet tommel opp, andre ned. Alternativet som får færrest stemmer, drikker
-//     <h3>Would you rather: færrest stemmer drikker</h3>,
-//     // Som å stjele godteri fra en baby;) Hver slurk en i laget tar = 5 poeng fra et valgfritt annet lag
-//     <h3>Dere kan stjele poeng fra et annet lag. 1 slurk = 5 poeng</h3>,
-//     // Alle er deltakere. Alle står i en sirkel, og ser ned i bakken. Teller ned fra 3, og alle ser opp på en annen person. Øyenkontakt = begge ute. 1 eller 2 vinnere: kan dele ut 10 slurker og får poeng
-//     <h3>Medusa</h3>,
-//     // Hele laget får drikken sin teipet fast til enten en eller begge hender, og må drikke sånn resten av spillet
-//     <h3>Edward Ciderhands</h3>
-// ];
-
 export const trick_or_treat_challenges: ReactNode[] = [
-    // Leser en sant eller usant-påstand for hver av lagmedlemmene. Dersom de svarer riktig, får de dele ut 3 slurker, ved feil må laget ta 3 slurker. Alle feil = chug på hele laget
-    <h3>Sant eller usant: alle på laget får en hver. Riktig = dele ut 3 slurker, feil = laget tar 3 slurker</h3>,
-    // Enten link/bytte side til eller mini-spin the wheel inni luka. F.eks. tall fra 1-6, og laget må drikke antall slurker hjulet lander på
-    // <button onClick={() => { window.open('/SpinTheWheel', '_blank') }} className="new-page-button">
-    //     Spin the wheel!
-    // </button>,
+    // En påstand per person på laget. Riktig/feil = del ut/ta 3 slurker
+    <h3>Sant eller usant?</h3>,
+    // Laget drikker antall slurker hjulet lander på (1-10)
     <button className='new-page-button' >
         <a href="https://wheelofnames.com/" target='blank' className='url'>Spin the wheel!</a>
     </button>,
-    // Én på laget får vodkashot, resten vann. De tar den samtidig, og de andre lagene stemmer på hvem som drakk vodka. Lag som gjetter riktig får halvparten av poengene (resten gis til spillerlaget). Ingen riktig = laget får alle poengene
+    // Noen på laget får vodkashot, resten vann, shotter samtidig. De andre gjetter ved å peke, feil pek = 3 slurker
     <h3>Vann eller vodka</h3>,
-    // Alle på laget får samme spørsmål: nødt eller sannhet? De får spørsmål/challenge fra en liste (inspo: https://www.cosmopolitan.com/uk/entertainment/a32313763/truth-or-dare-questions/), og dersom de nekter å svare/gjøre tingen må de ta en shot
-    <h3>Nødt eller sannhet. Alle på laget får en hver. Blånekt = shot!</h3>
+    <h3>JOKER! Velg en allerede åpnet luke å gjøre igjen</h3>
 ];
 
 export const godteriskala_challenges: ReactNode[] = [
-    // Alle deltakere tar en navnerunde der de sier navn, et dyr på samme forbokstav og alder. Runden avslutter med at spillerlaget også sier seg selv. Så må de i laget ta runden selv, og ramse opp navn, dyr og alder på alle. 1 feil = 1 slurk
-    <h3>Fadderuke-flashbacks! Dere får én navnerunde med navn, dyr og alder, og må deretter ramse opp alle</h3>,
-    // Akkurat det det høres ut som. Alle lag sender én utfordrer, som raskest mulig skal spise et lakrissnøre uten hendene. Vinneren får poengene, og dele ut 10 slurker
+    // Laget får høre én navnerunde med navn, alder og team, og må deretter ramse opp alle. 1 feil = 1 slurk
+    <h3>Fadderuke-flashbacks! Vi kjører navnerunde</h3>,
+    // En fra hvert lag. Spis opp raskest uten hendene
     <h3>Lakrissnøre</h3>,
-    // En fra hvert lag får én skål med nonstop, en tom skål og et sugerør. 
-    <h3>Nonstop-tid! Alle lag sender en utfordrer. Vinneren får poengene og dele ut 10 slurker</h3>,
-    // Én på laget får jägershot, resten cola. De tar den samtidig, og de andre lagene stemmer på hvem som drakk jäger. Lag som gjetter riktig får halvparten av poengene (resten gis til spillerlaget). Ingen riktig = laget får alle poengene
+    // Velger et annet lag de vil utfordre, og så velger begge lag én utfordrer
+    <h3>Utfordre en fra et annet lag til push-up konkurranse</h3>,
+    // Noen på laget får jägershot, resten cola, shotter samtidig. De andre gjetter ved å peke, feil pek = 3 slurker
     <h3>Cola eller jäger</h3>
 ];
 
 export const kostymefest_challenges: ReactNode[] = [
-    // Klassisk pekelek. Alle peker på den de synes har det mest kreative kostymet. Alle som blir pekt på, drikker antall pek. Spillerlaget og laget til den med flest pek deler poengene broderlig mellom seg
-    <h3>Pekelek: hvem har det mest kreative kostymet? Drikk antall pek du får</h3>,
-    // Vi setter sammen bilde av 2-3 som deltar på festen, og laget må gjette hvem bildet er satt sammen av
+    // Alle peker. Drikk antall pek
+    <h3>Pekelek: hvem har det mest kreative kostymet?</h3>,
+    // Minst 2 riktige for poeng. 3 riktige = del ut 10 slurker
     <button onClick={() => { window.open('/GuessWho', '_blank') }} className="new-page-button">
         Gjett hvem!
     </button>,
-    // Klassisk pekelek. Alle peker på den de synes har det beste kostymet. Alle som blir pekt på, drikker antall pek. Spillerlaget og laget til den med flest pek deler poengene broderlig mellom seg
-    <h3>Pekelek: hvem har best kostyme? Drikk antall pek du får</h3>,
-    // Laget bytter så mange eller få klesplagg de vil innad i laget (ett bytte = to plagg, ett for begge parter). Laget deler ut like mange slurker som klesplagg de byttet. Må beholdes ut spillet
-    <h3>Bytt ett klesplagg med en annen på laget. Antall byttede plagg = antall slurker dere kan dele ut</h3>
+    // Alle peker. Drikk antall pek
+    <h3>Pekelek: hvem har best kostyme?</h3>,
+    // Bytt innad i laget. Tell antall plagg hver person har fått. Del ut samme antall slurker som byttede klesplagg
+    <h3>Bytt klesplagg med andre på laget. Antall plagg = antall slurker</h3>
 ];
