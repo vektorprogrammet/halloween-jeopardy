@@ -1,5 +1,5 @@
 /* ResetButton component styling */
-.resetButton-button{
+.resetbutton-button {
     font-family: 'Times New Roman', Times, serif;
     color: white;
     border: none;
@@ -10,12 +10,12 @@
     transition: 0.15s;
 }
 
-.resetButton-button:hover{
+.resetbutton-button:hover {
     scale: 1.05;
     cursor: pointer;
 }
 
-.resetButton-button:active{
+.resetbutton-button:active {
     filter: brightness(75%);
     scale: 1;
 }

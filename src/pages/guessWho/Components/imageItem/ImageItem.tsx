@@ -1,14 +1,14 @@
 import './imageItem.css'
 import { ReactNode } from 'react';
 
-interface ChallengeProps {
+interface ImageItemProps {
     tag: ReactNode;
 }
 
-export default function Challenge({ tag }: ChallengeProps) {
+export default function ImageItem({ tag }: ImageItemProps) {
 
     return (
-        <div className="challenge-container">
+        <div className="imageitem-container">
             {tag}
         </div>
     )

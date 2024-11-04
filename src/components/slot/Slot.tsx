@@ -19,14 +19,14 @@ export default function Slot({ id, coverText, challengeText }: SlotProps) {
     useEffect(() => {
         window.localStorage.setItem(`${id}`, String(isChallengeVisible))
     }, [isChallengeVisible, id]);
-    
+
     const hideCover = () => {
         setChallengeVisible(!isChallengeVisible);
     };
 
     return (
         <div className="slot-container" onClick={hideCover}>
-            {!isChallengeVisible && <Cover text={coverText}/>}
+            {!isChallengeVisible && <Cover text={coverText} />}
             {isChallengeVisible && <Challenge tag={challengeText} />}
         </div>
     )

@@ -10,23 +10,22 @@ export const GuessWho = () => {
     return (
         <>
             <div className='header-container'>
-               <h1 className='header glow'>Guess Who</h1>
+                <h1 className='header glow'>Guess Who</h1>
             </div>
 
             <div className="images-container">
-            {images.map(
-                (index, i) => {
-                const image_list = [
-                    <img src={Image1} alt="Filip + Trump" className='face-image' />,
-                    <img src={Image2} alt="Sander + Haaland" className='face-image' />,
-                    <img src={Image3} alt="Eirik + Mona Lisa" className='face-image' />
-                ];
-                return (
-                <>
-                    <Image index={index} image={image_list[i]} />
-                </>
+                {images.map(
+                    (index, i) => {
+                        const image_list = [
+                            <img src={Image1} alt="Filip + Trump" className='face-image' />,
+                            <img src={Image2} alt="Sander + Haaland" className='face-image' />,
+                            <img src={Image3} alt="Eirik + Mona Lisa" className='face-image' />
+                        ];
+                        return (
+                            <Image index={index} image={image_list[i]} />
+                        )
+                    }
                 )}
-            )}
             </div>
         </>
     )
